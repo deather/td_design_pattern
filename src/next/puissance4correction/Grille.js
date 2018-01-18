@@ -6,6 +6,8 @@ export class Grille {
 		this.cases = [];
 
 		for (let i = 0; i < 6; i++) {
+			this.cases.push([]);
+
 			for (let j = 0; j < 7; j++) {
 				this.cases[i][j] = new Case(i, j, null);
 			}

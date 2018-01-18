@@ -1,4 +1,4 @@
-import {Grille} from './puissance4/Grille.js';
+import {Grille} from './puissance4correction/Grille.js';
 
 let grille = new Grille();
 

@@ -1,5 +1,6 @@
 import {Case} from './Case.js';
 import {Jeton} from './Jeton.js';
+import {Iterator} from './Iterator.js';
 
 export class Grille {
 	constructor() {
@@ -16,5 +17,9 @@ export class Grille {
 
 	setCase(line, column, value) {
 		this.cases[line][column].jeton = new Jeton(value);
+	}
+
+	iterator() {
+		return new Iterator(this);
 	}
 }
